@@ -1,0 +1,29 @@
+<script>
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(mensaje) {
+		document.write(mensaje);
+		saltarLinea();
+	}
+	function calcIMC(peso, altura, nombre) {
+		imprimir("El IMC de " + nombre + " es: " + peso / altura);
+	}
+
+    
+	let pesoDeAlguien = prompt("Introduzca su peso en kg");
+    //89
+	let alturaDeAlguien = prompt("Introduzca su altura en mts");
+    //1.74
+	let nombreDeAlguien = prompt("Introduzca su nombre");
+    // Amir
+
+
+	calcIMC(pesoDeAlguien, alturaDeAlguien, nombreDeAlguien);
+    //El IMC de Amir es: 51.14942528735632
+
+
+</script>

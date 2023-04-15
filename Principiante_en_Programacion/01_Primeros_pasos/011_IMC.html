@@ -1,0 +1,43 @@
+<script>
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(mensaje) {
+		document.write(mensaje);
+		saltarLinea();
+	}
+	function calcIMC(peso, altura, nombre) {
+		imprimir("El IMC de " + nombre + " es: " + peso / altura);
+	}
+	function calcIMCreturn(peso, altura) {
+		return peso / altura; 
+
+	}
+
+	let pesoDeAlguien = 86;
+	let alturaDeAlguien = 1.74;
+	let nombreDeAlguien = "Amir";
+
+	let pesoDeAlguien2 = 83;
+	let alturaDeAlguien2 = 1.44;
+	let nombreDeAlguien2 = "Persona2";
+
+	let pesoDeAlguien3 = 142;
+	let alturaDeAlguien3 = 1.95;
+	let nombreDeAlguien3 = "Persona3";
+
+	let pesoDeAlguien4 = 136;
+	let alturaDeAlguien4 = 1.65;
+	let nombreDeAlguien4 = "Persona4";
+
+	calcIMC(pesoDeAlguien, alturaDeAlguien, nombreDeAlguien);
+	calcIMC(pesoDeAlguien2, alturaDeAlguien2, nombreDeAlguien2);
+	calcIMC(pesoDeAlguien3, alturaDeAlguien3, nombreDeAlguien3);
+
+
+	imprimir("El IMC de "+ nombreDeAlguien4 + " es: " + calcIMCreturn(pesoDeAlguien4, alturaDeAlguien4)); 
+
+</script>
