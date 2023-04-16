@@ -1,0 +1,43 @@
+<script>
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(mensaje) {
+		document.write(mensaje);
+		saltarLinea();
+	}
+    //prompt devuelve un string
+var victorias = parseInt(prompt("Introduzca la cantidad de victorias del equipo de futbol"));
+var empates = parseInt(prompt("Introduzca la cantidad de empates del equipo de futbol"));
+var puntosTotales = victorias * 3 + empates;
+//1 victoria = 3 puntos
+//1 empate = 1 punto
+
+imprimir("La suma de puntos del equipo es de: " + puntosTotales);
+
+if (puntosTotales > 15){
+    
+    imprimir("El equipo está mejorando");
+}
+if (puntosTotales < 15){
+    
+    imprimir("El equipo está empeorando");
+}
+if (puntosTotales == 15){
+    imprimir("El equipo está está igual");
+    
+}
+
+
+//Se multiplica JS convierte el string en integer
+imprimir("10"*2);
+
+//se concatenan, no se suman
+imprimir("10"+2);
+imprimir("10"+20);
+
+
+</script>
