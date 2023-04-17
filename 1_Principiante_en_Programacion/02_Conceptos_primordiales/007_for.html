@@ -1,0 +1,28 @@
+<script>
+	function saltarLinea() {
+		document.write("<br>");
+
+	}
+
+	function imprimir(mensaje) {
+		document.write(mensaje);
+		saltarLinea();
+	}
+
+    var tablaDe = parseInt(prompt("Introduzca el número del que desea conocer su tabla de multiplicar:"));
+    var multiplicador = 1;
+
+    imprimir("while");
+    while(multiplicador <= 10){
+    imprimir(tablaDe + " * "+ multiplicador + " = " + tablaDe * multiplicador);
+    multiplicador++;
+}
+document.write("<br>");
+document.write("<br>");
+
+imprimir("for");
+for(var i = 1; i <= 10 ; i++){
+    imprimir(tablaDe + " * "+ i + " = " + tablaDe * i);
+}
+
+</script>

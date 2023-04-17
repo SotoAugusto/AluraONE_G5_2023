@@ -1,0 +1,40 @@
+<script>
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(mensaje) {
+		document.write(mensaje);
+		saltarLinea();
+	}
+    
+    function sorteo(n){
+        return Math.round(Math.random()*n);
+    }
+    var creditos = 3;
+    var IntentosDisponibles = creditos;
+    var numIntentos = 1;
+    var numeroPensado = sorteo(10); //genera un numero del 0 al 10
+    while (numIntentos <= creditos){
+    
+    var numeroLanzado  = parseInt(prompt("Ingrese un número del 1 - 10"));
+    if (numeroPensado == numeroLanzado){
+        alert("Usted acertó en su intento #" + numIntentos +" el número pensado también era "+ numeroPensado);
+        break;
+    } else {
+
+        if(numeroPensado > numeroLanzado){
+            alert("Usted erró, el número pensado era mayor.");
+        }else{ 
+            alert("Usted erró, el número pensado era menor.");
+        }
+    }
+    numIntentos++;
+    IntentosDisponibles--;
+
+    alert("Le quedan " + IntentosDisponibles + " intentos.")
+}
+imprimir("El número pensado era: " + numeroPensado);
+</script>

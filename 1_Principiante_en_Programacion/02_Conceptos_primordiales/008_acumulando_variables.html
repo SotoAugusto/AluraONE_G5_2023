@@ -1,0 +1,32 @@
+<script>
+	function saltarLinea() {
+		document.write("<br>");
+
+	}
+
+	function imprimir(mensaje) {
+		document.write(mensaje);
+		saltarLinea();
+	}
+
+	var numeroMiembros = parseInt(prompt("Ingrese el número de integrantes de la familia:"));
+
+	var contador = 0;
+	var sumaEdades = 0
+
+	while (contador < numeroMiembros){
+
+		var edad = parseInt(prompt("Ingrese la edad del familiar #" + (contador + 1)));
+		sumaEdades += edad;
+		contador++;
+	}
+
+	imprimir(contador);
+	imprimir("La suma de edades es: "+sumaEdades);
+
+
+	imprimir("El promedio de edad de la familia es de: " + (sumaEdades / contador));
+
+
+
+</script>
