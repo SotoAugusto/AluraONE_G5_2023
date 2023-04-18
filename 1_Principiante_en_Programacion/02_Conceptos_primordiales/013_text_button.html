@@ -1,0 +1,38 @@
+<!-- crea un cuadro de texto -->
+<input type="text"> 
+<!-- crea un botón -->
+<button>Verificar si acertó con el secreto</button>
+
+
+
+<script>
+    function verificar(){
+        //lee el valor que hay en el cuadro de texto y lo compara con secreto
+        if(parseInt(input.value) == secreto){
+            alert("Usted acertó, el valor era " + secreto);
+        }else{
+            alert("Usted erró, el valor era " + secreto);
+            
+        }
+        //borra el contenido de mi caja de texto
+        input.value = ""; 
+        //Mover el cursor en mi caja de texto 
+        input.focus();
+    }
+    
+    var secreto = Math.round(Math.random()*10);
+    //guarda en una variable (objeto???) mi elemento html input
+
+    var input = document.querySelector("input");
+    //guarda en una variable (objeto???) mi elemento html button
+    var button = document.querySelector("button");
+    //Cuando se hace click en mi variable (objeto???) button ejecuta la función 'verificar'
+    button.onclick = verificar;
+    
+    
+
+
+
+
+
+</script>
