@@ -1,0 +1,89 @@
+<!-- crea un cuadro de texto -->
+<input type="text" />
+<!-- crea un botón -->
+<button>Verificar si acertó con el secreto</button>
+
+<script>
+	//inicializa array
+	var secretos = sortearNumeros(4);
+
+	console.log(secretos);
+
+	function generarNumAleatorio() {
+		return Math.round(Math.random() * 10);
+	}
+
+	function sortearNumeros(cantidadNum) {
+		//este arreglo secretos es único y diferente al otro, solo existe dentro de esta función
+		var secretos = [];
+		var i = 0;
+		while (i < cantidadNum) {
+			var numRepetido = false;
+
+			numeroAleatorio = generarNumAleatorio();
+			console.log(numeroAleatorio);
+
+			if (numeroAleatorio != 0) {
+				for (j = 0; j < secretos.length; j++) {
+					if (numeroAleatorio == secretos[j]) {
+						numRepetido = true;
+						break;
+					}
+				}
+				if (numRepetido == false) {
+					secretos.push(numeroAleatorio);
+					i++;
+				}
+			}
+		}
+		return secretos;
+	}
+
+	function verificar() {
+		var numEncontrado = false;
+		//recorrer array de numeros aleatorios
+		for (i = 0; i < secretos.length; i++) {
+			//lee el valor que hay en el cuadro de texto y lo compara con secreto
+			if (parseInt(input.value) == secretos[i]) {
+				alert("USTED ACERTÓ, el valor " + secretos[i] + " se encuentra entre los números sorteados, la lista de números era: " + printArray(secretos));
+				numEncontrado = true;
+				break;
+			}
+			//else {
+			//	alert("Usted erró, el número #" + (i + 1) + " era: " + secretos[i]);
+			//}
+		}
+        if (numEncontrado == false) {
+            alert(
+                "El número que introdujo no está entre la lista de número sorteados, la lista de números era: " +
+                    printArray(secretos),
+            );
+        }
+
+        //borra el contenido de mi caja de texto
+        input.value = "";
+        //Mover el cursor en mi caja de texto
+        input.focus();
+		console.log("numEncontrado");
+		console.log(numEncontrado);
+	}
+
+	function printArray(array) {
+		var arrayValues = "";
+		for (i = 0; i < array.length; i++) {
+			arrayValues += array[i] + ", ";
+		}
+		return arrayValues;
+	}
+
+	//guarda en una variable (objeto???) mi elemento html input
+
+	var input = document.querySelector("input");
+
+	//guarda en una variable (objeto???) mi elemento html button
+	var button = document.querySelector("button");
+	//Cuando se hace click en mi variable (objeto???) button ejecuta la función 'verificar'
+	button.onclick = verificar;
+	console.log("input.value");
+	console.log(parseInt(input.value));
+</script>
