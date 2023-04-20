@@ -1,0 +1,27 @@
+<canvas  width="600" height="400">
+
+</canvas>
+
+<script>
+    //busca en el dom una etiqueta llamada canvas y seleccionala
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "green";
+    pincel.fillRect(0,0,350,350);//cabeza
+
+
+    pincel.fillStyle = "black";
+    pincel.fillRect(40,40,90,90);//ojo izq
+    pincel.fillRect(220,40,90,90);//ojo der
+    pincel.fillRect(130,130,90,100);//nariz
+    pincel.fillRect(90,175,50,100);//izq
+    pincel.fillRect(220,175,50,100);//der
+
+
+
+
+
+
+
+</script>

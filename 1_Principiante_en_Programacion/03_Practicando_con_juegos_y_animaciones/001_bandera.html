@@ -1,0 +1,37 @@
+<canvas width="600" height="600">
+
+</canvas>
+
+<script>
+    //guardar canvas como pantallla
+    var pantalla = document.querySelector("canvas");
+    //set pincel as CanvasRenderingContext2D
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "red";//propiedad
+    //inicia en 0,0 y mueve el pincel hacia 600,400
+    pincel.fillRect(0,0,600,400);//funcion
+
+    pincel.fillStyle = "white";//propiedad
+    //inicia en 0,0 y mueve el pincel hacia 400,400
+    pincel.fillRect(0,0,400,400);//funcion
+
+    pincel.fillStyle = "green";//propiedad
+    //inicia en 0,0 y mueve el pincel hacia 200,400
+    pincel.fillRect(0,0,200,400);//funcion
+
+
+    pincel.fillStyle = "yellow";//propiedad
+    pincel.beginPath();//reinicia la posicion del cursor
+    pincel.moveTo(300,200);//mueve el cursor a esta coordenada
+    pincel.lineTo(200,400);//agrega un alinea recta a esta coordenada
+    pincel.lineTo(400,400);//agrega una linea recta a esta coordenada
+    pincel.fill();//conecta las lineas rectas y rellenalas
+
+    pincel.fillStyle = "blue";//propiedad
+    pincel.beginPath();//reinicia la posicion del cursor
+    //coordenadas, radio, angulo incial, angulo final
+    pincel.arc(300, 200, 50, 0, 2*3.14);
+    pincel.fill();//conecta las lineas  y rellenalas
+
+</script>
