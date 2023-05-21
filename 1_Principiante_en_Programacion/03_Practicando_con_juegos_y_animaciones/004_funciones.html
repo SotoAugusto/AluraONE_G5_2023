@@ -1,13 +1,41 @@
 <canvas width="600" height="400"> </canvas>
 <script>
-	function dibujarCuadradoVerde(){ 
+
+    function dibujarCuadrado(cantidad, tamanho) {
+        var location_x = 0;
+        var location_y = 0;
+        var j = 0;
         var pantalla = document.querySelector("canvas");
-        var pincel = pantalla.getContext("2d"); 
-        pincel.fillStyle = "green"; 
-        pincel.fillRect(0,0,50,50); 
-        pincel.strokeStyle = "black"; 
-        pincel.strokeRect(0,90,50,50); 
+        var pincel = pantalla.getContext("2d");
+        pincel.strokeStyle = "black";
+        let semaforo = ["green", "yellow", "red"];
+        var semaforo_color = 0;
+
+        while (j < cantidad) {
+            pincel.fillStyle = semaforo[semaforo_color];
+            pincel.fillRect(location_x, location_y, tamanho, tamanho);
+            pincel.strokeRect(location_x, location_y, tamanho, tamanho);
+
+            location_x += tamanho;
+            console.log("🚀 ~ file: 004_funciones.html:20 ~ location_x:", location_x)
+            j++;
+            semaforo_color++;
+            if (semaforo_color > 2) {
+                semaforo_color = 0;
+            }
+
+            if (location_x >= 600) {
+                location_y += tamanho;
+                console.log("🚀 ~ file: 004_funciones.html:29 ~ location_y:", location_y)
+                location_x = 0;
+            }
+        }
+
     }
-    dibujarCuadradoVerde();
+
+    // cantidad, tamanho (px)
+    dibujarCuadrado(20, 90);
+
+
 
 </script>

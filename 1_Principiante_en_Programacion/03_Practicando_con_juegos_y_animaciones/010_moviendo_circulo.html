@@ -1,0 +1,68 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0, 0, 600, 400);
+
+
+
+
+
+    function hacerCircunferencia(x, y, radio) {
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpiarPantallaCompleta() {
+        pincel.clearRect(0, 0, 600, 400)
+
+    }
+
+    function actualizarPantalla() {
+        //x, y, radio
+        if (CambiarSentido == false) {
+            limpiarPantallaCompleta();
+            hacerCircunferencia(x, 20, 10);
+            x++;
+        }
+        if (x == 600) {
+            CambiarSentido = true;
+        }
+        if (CambiarSentido == true) {
+            limpiarPantallaCompleta();
+            hacerCircunferencia(x, 20, 10);
+            x--;
+        }
+        if (x == 0) {
+            CambiarSentido = false;
+        }
+
+        //opcion 2
+
+        //limpiarPantallaCompleta();
+        //if(x > 600){
+        //    sentido = -1;
+        //}else if(x < 0){
+        //    sentido = 1;
+        //}
+
+        //disenharCircunferencia(x,20,10);
+        //x = x + sentido;
+
+    }
+
+
+    var x = 0;
+    var CambiarSentido = false;
+    //funcion, tiempo en milesimas de segundo llama a funcion
+    setInterval(actualizarPantalla, 1);
+
+
+
+
+
+</script>
