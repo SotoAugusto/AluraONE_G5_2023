@@ -1,0 +1,46 @@
+#banner {
+	width: 100%;
+}
+
+body {
+	background-color: burlywood;
+}
+h2 {
+	background-color: beige;
+}
+
+p {
+	text-align: center;
+	background-color: azure;
+}
+
+#mision {
+	font-size: 20px;
+}
+
+em strong {
+	color: red;
+}
+h1,
+h3 {
+	text-align: center;
+}
+.principal,
+.diferenciales {
+	background-color: white;
+	padding: 20px;
+}
+li {
+	font-style: italic;
+}
+
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin-right: 10%;
+}
+
+.imagenDiferenciales {
+	width: 50%;
+}
