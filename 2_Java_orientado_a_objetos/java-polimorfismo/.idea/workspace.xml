@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d59e757-1808-40da-a9ad-52aad42cd5f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../02_java-oo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java-oo/src/PruebaConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_java-oo/src/PruebaEncapsulamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_java-oo/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02_java-oo/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_java-oo/src/ClienteTestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02_java-oo/src/ClienteTestObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_java-oo/src/CrearCuentaObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02_java-oo/src/CrearCuentaObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_java-oo/src/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02_java-oo/src/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_java-oo/src/PruebaAcceso.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02_java-oo/src/PruebaAcceso.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2TlksXPLmO5TsPUSHu3Nt4PVYq7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/colocho/code/Courses/AluraONE_G5_2023/2_Java_orientado_a_objetos/03_java-polimorfismo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d59e757-1808-40da-a9ad-52aad42cd5f5" name="Changes" comment="" />
+      <created>1691625263509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691625263509</updated>
+    </task>
+    <servers />
+  </component>
+</project>
