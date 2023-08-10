@@ -1,11 +1,11 @@
 public class ClienteTestObject {
     public static void main(String[] args) {
         // Tipo variable , nombre variable - new nombre clase que hereda
-        Cliente amir = new Cliente();
+        Cliente ClienteAmir = new Cliente();
 
 //        amir.nombre = "Amir"; old way before private
 //        crea un nuevo cliente
-        amir.setNombre("AmirSoto");
+        ClienteAmir.setNombre("AmirSoto");
 
 
 //        crea una nueva cuenta
@@ -17,16 +17,19 @@ public class ClienteTestObject {
         //así se referencian
 
         //referencia
-        //                      objeto amir
-        cuentaDeAmir.setTitular(amir); ;
+        //                      objeto ClienteAmir
+        cuentaDeAmir.setTitular(ClienteAmir); ;
 
         System.out.println(cuentaDeAmir.getTitular());
-        System.out.println(amir);
+        System.out.println(ClienteAmir);
 //        System.out.println(cuentaDeAmir.titular.nombre); old way
 
 //        obtener el titular de la clase Cuenta
 //        y el nombre de la clase Cliente
         System.out.println(cuentaDeAmir.getTitular().getNombre());
+
+//        obtengo el titular del objeto cuentaDeAmir
+//        y obtengo el nombre del titular del objeto ClienteAmir
 
         //-------------------------------------------
         //también
